@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <!-- App content will go here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linking Unicons for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="nav-section nav-left">
+            <button class="nav-button menu-button">
+              <i class="uil uil-bars"></i>
+            </button>
+            <a href="#" class="nav-logo">
+              <img
+                src="images/logo.png"
+                alt="YouTube Logo"
+                class="logo-image"
+              />
+              <h2 class="logo-text">CnTube</h2>
+            </a>
+          </div>
+          <div class="nav-section nav-center">
+            <form action="#" class="search-form">
+              <input
+                type="text"
+                placeholder="Search"
+                class="search-input"
+                required
+              />
+              <button class="nav-button search-button">
+                <i class="uil uil-search"></i>
+              </button>
+            </form>
+            <button class="nav-button mic-button">
+              <i class="uil uil-microphone"></i>
+            </button>
+          </div>
+          <div class="nav-section nav-right">
+            <button class="nav-button theme-button">
+              <i class="uil uil-sun"></i>
+              <i class="uil uil-moon"></i>
+            </button>
+            <button class="nav-button notification-button">
+              <i class="uil uil-bell"></i>
+            </button>
+            <button class="nav-button profile-button">
+              <img src="images/user.jpg" alt="Profile" class="profile-image" />
+              <span class="profile-name">Tasos</span>
+            </button>
+          </div>
+        </nav>
+      </header>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
