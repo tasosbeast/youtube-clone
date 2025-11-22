@@ -7,6 +7,7 @@
   --border-color: #303030;
   --primary-red: #ff0000;
   --font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
 }
 
 * {
@@ -34,51 +35,112 @@ button {
   color: inherit;
 }
 
-/* Navbar Styles */
+/* Navbar Block */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
-  height: 56px;
+  padding: 0.8rem 1.6rem;
+  height: 5.6rem;
   background-color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 100;
+  gap: 1.6rem;
 }
 
-.nav-section {
+.navbar__section {
   display: flex;
   align-items: center;
+  gap: 1.6rem;
 }
 
-.nav-left {
-  gap: 16px;
+.navbar__section--center {
+  width: 50%;
 }
 
-.nav-button {
-  padding: 8px;
-  border-radius: 50%;
+.navbar__button {
+  padding: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.1s ease-in-out;
 }
 
-.nav-button:hover {
+.navbar__button:hover {
   background-color: var(--hover-color);
 }
 
-.nav-button i {
-  font-size: 24px;
+.navbar__button--search:hover {
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.nav-logo {
+.navbar__button i {
+  font-size: 2.4rem;
+}
+
+.navbar__button--theme {
+  position: relative;
+}
+
+.navbar__button--theme .uil-moon {
+  display: none;
+}
+
+body.dark .navbar__button--theme .uil-sun {
+  display: none;
+}
+
+body.dark .navbar__button--theme .uil-moon {
+  display: block;
+}
+
+/* Logo Block */
+.logo {
   display: flex;
   align-items: center;
-  padding: 18px 14px 18px 16px;
 }
 
-.logo-image {
-  height: 20px;
+.logo__image {
+  height: 2.8rem;
   width: auto;
+  cursor: pointer;
+}
+
+.logo__text {
+  font-size: 1.8rem;
+}
+
+/* Search Block */
+.search {
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 2rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.uil-search {
+  color: var(--bg-color);
+}
+
+/* Profile */
+.profile__image {
+  height: 2.8rem;
+  width: auto;
+  cursor: pointer;
+  border-radius: 50%;
 }

@@ -17,50 +17,49 @@
       href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"
     />
   </head>
-  <body>
+  <body class="dark">
     <div class="container">
       <header>
         <nav class="navbar">
-          <div class="nav-section nav-left">
-            <button class="nav-button menu-button">
+          <div class="navbar__section navbar__section--left">
+            <button class="navbar__button navbar__button--menu">
               <i class="uil uil-bars"></i>
             </button>
-            <a href="#" class="nav-logo">
+            <a href="#" class="logo">
               <img
                 src="images/logo.png"
                 alt="YouTube Logo"
-                class="logo-image"
+                class="logo__image"
               />
-              <h2 class="logo-text">CnTube</h2>
+              <h2 class="logo__text">TNTube</h2>
             </a>
           </div>
-          <div class="nav-section nav-center">
-            <form action="#" class="search-form">
+          <div class="navbar__section navbar__section--center">
+            <form action="#" class="search">
               <input
                 type="text"
                 placeholder="Search"
-                class="search-input"
+                class="search__input"
                 required
               />
-              <button class="nav-button search-button">
+              <button class="navbar__button navbar__button--search">
                 <i class="uil uil-search"></i>
               </button>
             </form>
-            <button class="nav-button mic-button">
+            <button class="navbar__button navbar__button--mic">
               <i class="uil uil-microphone"></i>
             </button>
           </div>
-          <div class="nav-section nav-right">
-            <button class="nav-button theme-button">
+          <div class="navbar__section navbar__section--right">
+            <button class="navbar__button navbar__button--theme">
               <i class="uil uil-sun"></i>
               <i class="uil uil-moon"></i>
             </button>
-            <button class="nav-button notification-button">
+            <button class="navbar__button navbar__button--notification">
               <i class="uil uil-bell"></i>
             </button>
-            <button class="nav-button profile-button">
-              <img src="images/user.jpg" alt="Profile" class="profile-image" />
-              <span class="profile-name">Tasos</span>
+            <button class="navbar__button navbar__button--profile">
+              <img src="images/user.jpg" alt="Profile" class="profile__image" />
             </button>
           </div>
         </nav>
